@@ -40,7 +40,7 @@ Mesmo assim, segue abaixo para observar os resultados:
     
   ![image](https://github.com/user-attachments/assets/6fb94428-3c50-401b-9d3b-39da5971824b)
 
-#### Resultado:
+  #### Resultado:
   ![image](https://github.com/user-attachments/assets/a6db2fc5-bcfa-432c-8b6c-6ea7eb5f4667)
 
 ### Exercício 3: Contar e Filtrar Alunos Matriculados em um Curso Específico
