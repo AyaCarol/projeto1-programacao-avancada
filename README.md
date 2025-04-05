@@ -24,7 +24,7 @@ Mesmo assim, segue abaixo para observar os resultados:
   
   ![image](https://github.com/user-attachments/assets/636ad4b3-7c84-40ff-a62d-aa0dc6210b96)
 
-#### Resultado:
+  #### Resultado:
   ![image](https://github.com/user-attachments/assets/5974cf35-8356-471f-80ee-9bf1e098a98a)
 
 ### Exercício 2: Relatório de Professores e Seus Cursos
@@ -58,7 +58,7 @@ determinado curso.
 
   ![image](https://github.com/user-attachments/assets/bfed7965-8b85-445a-a2e5-7ad855173991)
 
-#### Resultado:
+  #### Resultado:
   ![image](https://github.com/user-attachments/assets/ab81b064-1262-4889-a89f-de112ba3db0d)
 
 ### Exercício 4: Criar a Classe Disciplina e Relacioná-la com Aluno e Curso
@@ -86,7 +86,7 @@ determinado curso.
    ![image](https://github.com/user-attachments/assets/62a70945-639d-42a4-9092-1c8e9dd19240)
    ![image](https://github.com/user-attachments/assets/a6f31484-dc7b-468c-8788-e0b8a58d5cac)
 
-#### Resultado:
+   #### Resultado:
   ![image](https://github.com/user-attachments/assets/ff488462-b07d-4fa5-844b-ad4d8be542cc)
 
 
