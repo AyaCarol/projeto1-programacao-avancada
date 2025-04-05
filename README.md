@@ -11,7 +11,7 @@ Nosso trabalho consta com um menu aprimorado com tratamento de erros de input de
 
 Mesmo assim, segue abaixo para observar os resultados:
 
-# Exercício 1: Implementar a Remoção de Cursos para um Aluno
+### Exercício 1: Implementar a Remoção de Cursos para um Aluno
 
 - `Objetivo:` Adicionar funcionalidade para um aluno remover um curso ao qual está
     matriculado.
