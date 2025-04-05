@@ -1,18 +1,34 @@
-## Getting Started
+## Projeto Prático de Programação Avançada
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este é o nosso repositório para a avaliação do primeiro bimestre de Programação Avançada!
+Nossa dupla é:
+    - Ana Carolina Gomes da Silva 23211454-2
+    - Emily Grzgorczyki 23034936-2
 
-## Folder Structure
+## Estrutura do trabalho
 
-The workspace contains two folders by default, where:
+Nosso trabalho consta com um menu aprimorado com tratamento de erros de input de usuário, entretanto, os testes constados nos resquisitos do trabalho estão comentados ao final da classe MAIN!
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Mesmo assim, segue abaixo para observar os resultados:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+# Exercício 1: Implementar a Remoção de Cursos para um Aluno
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- `Objetivo:` Adicionar funcionalidade para um aluno remover um curso ao qual está
+    matriculado.
+- `Tarefa:`
+    • Adicione um método desmatricularCurso(String nomeCurso) na classe Aluno.
+    • Esse método deve remover o curso da lista de cursos matriculados.
+    • No Main, teste a funcionalidade matriculando um aluno em dois cursos e depois removendo
+    um deles.
+- `Código:`
+  ![image](https://github.com/user-attachments/assets/77f25e99-7147-47a8-a6ea-1d0d1b1071c6)
+  ![image](https://github.com/user-attachments/assets/636ad4b3-7c84-40ff-a62d-aa0dc6210b96)
 
-## Dependency Management
+- `Resultado:`
+  ![image](https://github.com/user-attachments/assets/5974cf35-8356-471f-80ee-9bf1e098a98a)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+
+  
+
+
