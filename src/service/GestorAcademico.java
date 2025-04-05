@@ -9,12 +9,14 @@ import java.util.stream.Collectors;
 import model.*;
 
 public class GestorAcademico {
-    Map<String, Aluno> alunos = new HashMap<>();
-    List<Professor> professores = new ArrayList<>();
-    Map<String, Curso> cursos = new HashMap<>();
+    Map<String, Aluno> alunos;
+    List<Professor> professores;
+    Map<String, Curso> cursos;
 
     public GestorAcademico(){
-
+        this.alunos = new HashMap<>();
+        this.cursos = new HashMap<>();
+        this.professores = new ArrayList<>();
     }
 
     public void adicionarProfessor(Professor p){
@@ -106,20 +108,24 @@ public class GestorAcademico {
     }
 
     public void filtrarProf(Predicate<Professor> filter){
+
         professores.stream()
             .filter(filter)
             .forEach(prof -> prof.exibirDetalhes());
+
     }
 
-    public void listarAlunosPorCurso(String nomeCurso){
+    public void listarAlunosPorCurso(String nomeCurso) {
         alunos.values().stream()
-            .filter(aluno -> aluno.getCursosMatriculados().contains(nomeCurso))
-            .forEach(aluno -> aluno.exibirDetalhes());
+                .filter(aluno -> aluno.getCursosMat().stream()
+                        .anyMatch(curso -> curso.getNome().equalsIgnoreCase(nomeCurso)))
+                .forEach(aluno -> aluno.exibirDetalhes());
     }
 
     public int contarAlunosPorCurso(String nomeCurso) {
         return (int) alunos.values().stream()
-                .filter(aluno -> aluno.getCursosMatriculados().contains(nomeCurso))
+                .filter(aluno -> aluno.getCursosMat().stream()
+                        .anyMatch(curso -> curso.getNome().equalsIgnoreCase(nomeCurso)))
                 .count();
     }
 
