@@ -29,9 +29,8 @@ public class Disciplina {
         return curso;
     }
 
-    public void exibirDetalhes(){
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Carga Horária: " + this.cargaHoraria);
-        System.out.println("Período: "+ this.periodo);
+    
+    public void exibirDetalhes() {
+        System.out.println("Disciplina: " + this.nome + ", Carga Horária: " + this.cargaHoraria + "h, Período: " + this.periodo + ", Curso: " + this.curso.getNome()); 
     }
 }
