@@ -4,13 +4,15 @@ import java.util.List;
 
 public class Aluno extends Pessoa {
     protected String matricula;
-    protected List<Curso> cursosMat = new ArrayList<>();
+    protected List<Curso> cursosMat;
     private List<Disciplina> disciplinasMat;
 
 
     public Aluno(String nome, String cpf, int idade, String matricula) {
         super(nome, cpf, idade);
         this.matricula = matricula;
+        this.cursosMat = new ArrayList<>();
+        this.disciplinasMat = new ArrayList<>();
     }
 
     public Aluno(String nome, String cpf, int idade, String genero, String matricula) {
@@ -20,7 +22,7 @@ public class Aluno extends Pessoa {
 
     @Override
     public void exibirDetalhes(){
-        System.out.println("Nome: " + this.nome);
+        System.out.println("\nNome: " + this.nome);
         System.out.println("Idade: " + this.idade);
         System.out.println("Matrícula: "+ this.matricula);
         System.out.println("Cursos Matriculados: ");
@@ -47,37 +49,46 @@ public class Aluno extends Pessoa {
         return this.matricula;
     }
 
-    public List<Curso> getCursosMatriculados() {
-        return cursosMat;
+    public List<Curso> getCursosMat(){
+        return this.cursosMat;
     }
 
     public void exibirCursosMat(){
-        if(cursosMat.isEmpty()){
+        if(this.cursosMat.isEmpty()){
             System.out.println("O aluno não está matriculado neste curso");
         }else{
             System.out.println("Cursos Matriculados:");
-            for (Curso c : cursosMat) {
-                System.out.println(c);
-            }
+            cursosMat.stream().forEach(curso-> System.out.println(curso.nome));
+        }
+    }
+
+    public List<Disciplina> getDisciplinasMatriculadas() {
+        return disciplinasMat;
+    }
+
+    public void matricularCurso(Curso curso) {
+        if (!this.cursosMat.contains(curso)) {
+            this.cursosMat.add(curso);
+        }else{
+            System.out.println("Aluno já matriculado neste curso!");
         }
     }
 
     public void matricularDisciplina(Disciplina disciplina) {
-        if (cursosMat.contains(disciplina.getCurso().getNome())) {
-            disciplinasMat.add(disciplina);
-            System.out.println("Aluno " + nome + " matriculado na disciplina " + disciplina.getNome());
-        } else {
-            System.out.println("Erro: O aluno " + nome + " não está matriculado no curso da disciplina " + disciplina.getNome());
+        if (!this.disciplinasMat.contains(disciplina)) {
+            this.disciplinasMat.add(disciplina);
+        }else{
+            System.out.println("Aluno já matriculado nesta disciplina?");
         }
     }
 
-    public void exibirDisciplinasMatriculadas() {
+    public void exibirDisciplinasMat() {
         if (disciplinasMat.isEmpty()) {
             System.out.println("O aluno não está matriculado em nenhuma disciplina.");
         } else {
-            System.out.println("Disciplinas matriculadas:");
+            System.out.println("Disciplinas matriculadas por " + this.nome + ":");
             for (Disciplina d : disciplinasMat) {
-                System.out.println(d);
+                System.out.println("- " + d.getNome());
             }
         }
     }
