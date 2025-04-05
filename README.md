@@ -15,9 +15,9 @@ Mesmo assim, segue abaixo para observar os resultados:
 - `Objetivo:` Adicionar funcionalidade para um aluno remover um curso ao qual está
     matriculado.
 - `Tarefa:`
-    • Adicione um método desmatricularCurso(String nomeCurso) na classe Aluno.
-    • Esse método deve remover o curso da lista de cursos matriculados.
-    • No Main, teste a funcionalidade matriculando um aluno em dois cursos e depois removendo
+    - Adicione um método desmatricularCurso(String nomeCurso) na classe Aluno.
+    - Esse método deve remover o curso da lista de cursos matriculados.
+    - - No Main, teste a funcionalidade matriculando um aluno em dois cursos e depois removendo
     um deles.
   
   ![image](https://github.com/user-attachments/assets/77f25e99-7147-47a8-a6ea-1d0d1b1071c6)
@@ -31,10 +31,10 @@ Mesmo assim, segue abaixo para observar os resultados:
 
 - `Objetivo`: Criar uma funcionalidade que relacione professores e os cursos que eles lecionam.
 - `Tarefa`:
-    • Adicione uma lista de cursos na classe Professor para armazenar os cursos que ele leciona.
-    • Crie um método atribuirCurso(Curso curso) para associar um professor a um curso.
-    • Adicione um método exibirCursos() que liste os cursos que ele ministra.
-    • No Main, associe um professor a pelo menos dois cursos e exiba as informações.
+    - Adicione uma lista de cursos na classe Professor para armazenar os cursos que ele leciona.
+    - Crie um método atribuirCurso(Curso curso) para associar um professor a um curso.
+    - Adicione um método exibirCursos() que liste os cursos que ele ministra.
+    - No Main, associe um professor a pelo menos dois cursos e exiba as informações.
 
   ![image](https://github.com/user-attachments/assets/298ea763-52bc-4d2e-abfc-42fd21801541)
     
@@ -47,12 +47,12 @@ Mesmo assim, segue abaixo para observar os resultados:
 - `Objetivo:` Usar Streams para contar e listar alunos matriculados em um
 determinado curso.
 - `Tarefa:`
-    • No GestorAcademico, adicione um método listarAlunosPorCurso(String nomeCurso) que:
-    • Filtra os alunos que estão matriculados no curso informado.
-    • Retorna a lista desses alunos.
-    • Crie um método contarAlunosPorCurso(String nomeCurso), que retorna o número total de
+    - No GestorAcademico, adicione um método listarAlunosPorCurso(String nomeCurso) que:
+    - Filtra os alunos que estão matriculados no curso informado.
+    - Retorna a lista desses alunos.
+    - Crie um método contarAlunosPorCurso(String nomeCurso), que retorna o número total de
     alunos matriculados no curso.
-    • No Main, teste listando alunos de um curso específico e exibindo a contagem.
+    - No Main, teste listando alunos de um curso específico e exibindo a contagem.
 
   ![image](https://github.com/user-attachments/assets/f05cf9e3-8ff2-4b67-84f3-292e8a483f17)
 
@@ -63,23 +63,23 @@ determinado curso.
 
 ### Exercício 4: Criar a Classe Disciplina e Relacioná-la com Aluno e Curso
 1. Criar a classe Disciplina com os seguintes atributos:
-    • nome (String) → Nome da disciplina
-    • cargaHoraria (int) → Carga horária da disciplina em horas
-    • periodo (int) → Período recomendado da disciplina
-    • curso (Curso) → Curso ao qual a disciplina pertence
+    - nome (String) → Nome da disciplina
+    - cargaHoraria (int) → Carga horária da disciplina em horas
+    - periodo (int) → Período recomendado da disciplina
+    - curso (Curso) → Curso ao qual a disciplina pertence
 2. Modificar a classe Aluno para permitir a matrícula em disciplinas:
-    • Adicionar um atributo disciplinasMatriculadas, que será uma lista de disciplinas.
-    • Criar um método matricularDisciplina(Disciplina disciplina), que adiciona a disciplina à lista.
-    • Criar um método exibirDisciplinasMatriculadas(), que lista todas as disciplinas do aluno.
+    - Adicionar um atributo disciplinasMatriculadas, que será uma lista de disciplinas.
+    - Criar um método matricularDisciplina(Disciplina disciplina), que adiciona a disciplina à lista.
+    - Criar um método exibirDisciplinasMatriculadas(), que lista todas as disciplinas do aluno.
 3. Criar a relação entre Curso e Disciplina:
-    • Adicionar um atributo disciplinas na classe Curso, que será uma lista de disciplinas.
-    • Criar um método adicionarDisciplina(Disciplina disciplina), que vincula a disciplina ao curso.
-    • Criar um método exibirDisciplinas(), que exibe todas as disciplinas do curso.
+    - Adicionar um atributo disciplinas na classe Curso, que será uma lista de disciplinas.
+    - Criar um método adicionarDisciplina(Disciplina disciplina), que vincula a disciplina ao curso.
+    - Criar um método exibirDisciplinas(), que exibe todas as disciplinas do curso.
 4. Testar no Main:
-    • Criar um curso.
-    • Criar algumas disciplinas vinculadas ao curso.
-    • Criar um aluno e matriculá-lo em algumas disciplinas.
-    • Exibir as disciplinas matriculadas do aluno
+    - Criar um curso.
+    - Criar algumas disciplinas vinculadas ao curso.
+    - Criar um aluno e matriculá-lo em algumas disciplinas.
+    - Exibir as disciplinas matriculadas do aluno
 
    ![image](https://github.com/user-attachments/assets/3c688eed-f0e8-40ea-a173-e288982a0eb2)
    ![image](https://github.com/user-attachments/assets/02811901-dcde-41a5-9a48-23f92be3ef90)
