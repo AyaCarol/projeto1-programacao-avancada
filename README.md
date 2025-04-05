@@ -20,7 +20,6 @@ Mesmo assim, segue abaixo para observar os resultados:
     • No Main, teste a funcionalidade matriculando um aluno em dois cursos e depois removendo
     um deles.
   
-- `Código:`
   ![image](https://github.com/user-attachments/assets/77f25e99-7147-47a8-a6ea-1d0d1b1071c6)
   
   ![image](https://github.com/user-attachments/assets/636ad4b3-7c84-40ff-a62d-aa0dc6210b96)
