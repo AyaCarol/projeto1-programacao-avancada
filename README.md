@@ -17,7 +17,7 @@ Mesmo assim, segue abaixo para observar os resultados:
 - `Tarefa:`
     - Adicione um método desmatricularCurso(String nomeCurso) na classe Aluno.
     - Esse método deve remover o curso da lista de cursos matriculados.
-    - - No Main, teste a funcionalidade matriculando um aluno em dois cursos e depois removendo
+    - No Main, teste a funcionalidade matriculando um aluno em dois cursos e depois removendo
     um deles.
   
   ![image](https://github.com/user-attachments/assets/77f25e99-7147-47a8-a6ea-1d0d1b1071c6)
