@@ -1,9 +1,8 @@
 ## Projeto Prático de Programação Avançada
 
-Este é o nosso repositório para a avaliação do primeiro bimestre de Programação Avançada!
-Nossa dupla é:
-    - Ana Carolina Gomes da Silva 23211454-2
-    - Emily Grzgorczyki 23034936-2
+Este é o nosso repositório para a avaliação do primeiro bimestre de Programação Avançada! Nossa dupla é:
+- Ana Carolina Gomes da Silva 23211454-2
+- Emily Grzgorczyki 23034936-2
 
 ## Estrutura do trabalho
 
