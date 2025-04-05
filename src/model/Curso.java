@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Curso {
@@ -12,6 +13,7 @@ public class Curso {
         this.nome = nome;
         this.cargaH = cargaH;
         this.codigo = codigo;
+        this.disciplinas = new ArrayList<>();
     }
 
     public String getNome(){
@@ -26,28 +28,22 @@ public class Curso {
         return this.codigo;
     }
 
-    public void adicionarDisciplina(Disciplina disciplina) {
-        if(disciplinas.contains(disciplina)){
-            System.out.println("A disciplina já foi cadastrada ao curso");
-        }else{
-            disciplinas.add(disciplina);
-        }
-        
-    }
-
-    public void exibirDisciplinas() {
-        if (disciplinas.isEmpty()) {
-            System.out.println("Nenhuma disciplina cadastrada no curso " + nome);
-        } else {
-            System.out.println("Disciplinas do curso " + nome + ":");
-            for (Disciplina d : disciplinas) {
-                System.out.println(d);
-            }
-        }
-    }
-
     public List<Disciplina> getDisciplinas() {
         return disciplinas;
     }
 
+    public void adicionarDisciplina(Disciplina disciplina) {
+        if (!disciplinas.contains(disciplina)) {
+            disciplinas.add(disciplina);
+        }else{
+            System.out.println("Disciplina já vinculada ao curso");
+        }
+    }
+
+    public void exibirDisciplinas() {
+        System.out.println("Disciplinas do curso " + nome + ":");
+        for (Disciplina d : disciplinas) {
+            System.out.println("- " + d.getNome());
+        }
+    }
 }
